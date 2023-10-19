@@ -16,7 +16,7 @@
   <main>
     <PageTransition url={data.url}>
       <slot />
-    </PageTransition> 
+    </PageTransition>
   </main>
 
   <Footer />
@@ -33,8 +33,5 @@
   }
 
   @media (min-width: 1440px) {
-    .layout {
-      /* padding-inline: 0; */
-    }
   }
 </style>
