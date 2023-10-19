@@ -1,0 +1,44 @@
+<script>
+  import { title } from "$lib";
+  import Toggle from "./Toggle.svelte";
+</script>
+
+<nav class="px-8 flex justify-between">
+  <a href="/">{title}</a>
+
+  <ul class="links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/rss.xml" target="_blank">RSS Feed</a></li>
+  </ul>
+
+  <Toggle />
+</nav>
+
+<style>
+  nav {
+    padding-block: var(--size-7);
+  }
+
+  .links {
+    margin-block: var(--size-7);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links {
+      display: flex;
+      gap: var(--size-7);
+      margin-block: 0;
+    }
+  }
+</style>
